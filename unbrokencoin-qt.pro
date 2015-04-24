@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = Unbroken-qt
-macx:TARGET = "Unbroken-Qt"
+TARGET = Unbrokencoin-qt
+macx:TARGET = "Unbrokencoin-Qt"
 VERSION = 0.8.6
 INCLUDEPATH += src src/json src/qt
 QT += network
