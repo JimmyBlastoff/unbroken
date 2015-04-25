@@ -1118,9 +1118,9 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
     while (nTime > 0 && bnResult < bnProofOfWorkLimit)
     {
         // Maximum 400% adjustment...
-        bnResult *= 4;
+        bnResult *= 2;
         // ... in best-case exactly 4-times-normal target time
-        nTime -= nTargetTimespan*4;
+        nTime -= nTargetTimespan*2;
     }
     if (bnResult > bnProofOfWorkLimit)
         bnResult = bnProofOfWorkLimit;
