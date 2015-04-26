@@ -1098,8 +1098,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 240; // Retargets every 2 blocks not 2016 so that it doesn't take a YEAR to retarget!!!
-static const int64 nTargetSpacing = 120; // 2 minutes blocks so that unbrokencoin is ACTUALLY FASTER than Bitcoin!!!
+static const int64 nTargetTimespan = 120; // Retargets every 2 blocks not 2016 so that it doesn't take a YEAR to retarget!!!
+static const int64 nTargetSpacing = 60; // 2 minutes blocks so that unbrokencoin is ACTUALLY FASTER than Bitcoin!!!
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
