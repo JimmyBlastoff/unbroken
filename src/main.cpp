@@ -1098,8 +1098,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 3600; //  retargets every 30 blocks-1 hour
-static const int64 nTargetSpacing = 120; //  120 second blocks - 2 minutes 
+static const int64 nTargetTimespan = 60 * 60; //  retargets every 30 blocks-1 hour
+static const int64 nTargetSpacing = 2 * 60; //  120 second blocks - 2 minutes 
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
